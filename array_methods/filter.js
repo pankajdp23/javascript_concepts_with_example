@@ -1,3 +1,21 @@
+/*
+# JavaScript Array filter():
+The filter() method creates a new array filled with elements that pass a test provided by a function.
+
+The filter() method does not execute the function for empty elements.
+
+The filter() method does not change the original array.
+
+Syntax: array.filter(function(currentValue, index, arr), thisValue)
+*/
+
+//1. Return an array of all values in ages[] that are 18 or over:
+const ages = [32, 33, 16, 40];
+const result1 = ages.filter(checkAdult); // 32,33,40
+
+function checkAdult(age) {
+  return age >= 18;
+}
 
 const users = [
     { name: 'Mike Tyson', age: 10},
