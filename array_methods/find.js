@@ -17,6 +17,7 @@ Syntax: array.find(function(currentValue, index, arr),thisValue)
 const ages = [3, 10, 18, 20];
 
 function checkAge(age) {
+  console.log('checked')
   return age > 18;
 }
 

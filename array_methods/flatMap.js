@@ -9,8 +9,6 @@ flatMap() does not execute the function for empty elements.
 
 flatMap() does not change the original array.
 
-flatMap() does not change the original array.
-
 */
 
 const myArr = [1, 2, 3, 4, 5, 6];
