@@ -25,7 +25,6 @@ const myBest = fruits.slice(-3, -1); // ["Lemon", "Apple"]
 /*
 # JavaScript Array splice(): array.splice(index, howmany, item1, ....., itemX)
 
-
 The splice() method adds and/or removes array elements.
 
 The splice() method overwrites the original array.
@@ -33,15 +32,10 @@ The splice() method overwrites the original array.
 
 //1. At position 2, add 2 elements:
 const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
-
 fruits2.splice(2, 0, "Lemon", "Kiwi"); //["Banana", "Orange", "Lemon", "Kiwi"...]
+console.log('fruits2', fruits2)
 
 //2. At position 2, remove 2 items:
 const fruits3 = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
 fruits3.splice(2, 2); // ["Banana", "Orange", "Kiwi"]
-
-
-
-//3. At position 2, add new items, and remove 1 item:
-const fruits4 = ["Banana", "Orange", "Apple", "Mango"];
-fruits4.splice(2, 1, "Lemon", "Kiwi"); //["Banana", "Orange", "Lemon", "Kiwi"...]
+console.log('fruits3', fruits3)
