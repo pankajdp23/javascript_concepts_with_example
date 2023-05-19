@@ -12,4 +12,4 @@ const name = user.name;
 
 const {name:userName = 'Guest', age: userAGe = "0", location: userLocation} = user;
 const {city, state} = location;
-console.log(name, age, city, state ) 
+console.log(userName, age, city, state ) 

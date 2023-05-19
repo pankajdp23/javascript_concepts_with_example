@@ -11,7 +11,8 @@ for (variable of iterable) {
   // code block to be executed
 }
 
-variable - For every iteration the value of the next property is assigned to the variable. Variable can be declared with const, let, or var.
+variable - For every iteration the value of the next property is assigned to the variable. 
+Variable can be declared with const, let, or var.
 
 iterable - An object that has iterable properties.
 

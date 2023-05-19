@@ -6,7 +6,7 @@ const third = numbers[2];
 */
 
 const [,, thirdValue] = numbers;
-console.log( thirdValue)
+console.log( thirdValue) // 30
 
 
 
@@ -23,5 +23,5 @@ const countries = [
     }
 ]
 
-const [{country, scores: [,firstScore] }] = countries;
-console.log(country, firstScore)
+const [{country, scores: [,firstScore] }, {country: country1}] = countries;
+console.log(country, firstScore, country1)
