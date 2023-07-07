@@ -43,6 +43,18 @@ text3[0] = "A";    // Gives no error, but does not work
 
 
 /*
+####### Split: string.split(separator, limit)
+The split() method splits a string into an array of substrings.
+
+The split() method returns the new array.
+
+The split() method does not change the original string.
+
+If (" ") is used as separator, the string is split between words.
+
+
+
+
 # Converting a String to an Array:
 If you want to work with a string as an array, you can convert it to an array.
 
@@ -56,3 +68,20 @@ If the separator is "", the returned array will be an array of single characters
 text.split(",")    // Split on commas
 text.split(" ")    // Split on spaces
 text.split("|")    // Split on pipe
+
+let text4 = "How are you doing today?";
+const myArray0 = text4.split(" "); //["How", "are", "you", "doing", "toda...]
+console.log('myArray', myArray0);
+
+//Split the characters, including spaces:
+const myArray1 = text4.split(""); // ["H", "o", "w", " ", "a", "r", "e", ...]
+
+//Use the limit parameter:
+const myArray2 = text4.split(" ", 3);// ["How", "are", "you"]
+
+
+// Use a letter as a separator:
+const myArray3 = text4.split("o"); //["H", "w are y", "u d", "ing t", "da...]
+
+// If the separator parameter is omitted, an array with the original string is returned:
+const myArray = text.split(); //  ["How are you doing today?"]

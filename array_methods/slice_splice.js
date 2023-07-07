@@ -32,7 +32,7 @@ The splice() method overwrites the original array.
 
 //1. At position 2, add 2 elements:
 const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
-fruits2.splice(2, 0, "Lemon", "Kiwi"); //["Banana", "Orange", "Lemon", "Kiwi"...]
+fruits2.splice(2, 0, "Lemon", "Kiwi"); //["Banana", "Orange", "Lemon", "Kiwi", "Apple", "Mango"]
 console.log('fruits2', fruits2)
 
 //2. At position 2, remove 2 items:
