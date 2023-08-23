@@ -85,3 +85,39 @@ const myArray3 = text4.split("o"); //["H", "w are y", "u d", "ing t", "da...]
 
 // If the separator parameter is omitted, an array with the original string is returned:
 const myArray = text.split(); //  ["How are you doing today?"]
+
+
+
+/*
+
+To convert an object to a string representation in JavaScript, 
+you can use the JSON.stringify() method. 
+This method serializes a JavaScript object to a JSON string format. Here's how you can use it:
+
+*/
+
+const myObject = { name: "John", age: 30, city: "New York" };
+
+const jsonString = JSON.stringify(myObject);
+
+console.log(jsonString); //{"name":"John","age":30,"city":"New York"}
+
+/*
+Keep in mind that JSON.stringify() only works for objects that are serializable to JSON. 
+This means the object can only include data types that are supported by JSON: strings, numbers,
+booleans, arrays, and other valid JSON objects. Any functions, symbols, or non-serializable values will be omitted or 
+converted to null in the resulting JSON string.
+
+
+If you want to reverse the process and convert a JSON string back into a JavaScript object, 
+you can use the JSON.parse() method:
+*/
+
+const jsonString1 = '{"name":"John","age":30,"city":"New York"}';
+
+const parsedObject = JSON.parse(jsonString1);
+
+console.log(parsedObject); // { name: 'John', age: 30, city: 'New York' }
+
+/* Note : Remember that parsing JSON strings using JSON.parse() only works for valid JSON strings. 
+If the input is not properly formatted JSON, an error will be thrown. */
